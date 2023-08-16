@@ -1,0 +1,4 @@
+flask
+flask_restful
+Flask-MySQLdb==0.2.0
+mysql-connector-python
