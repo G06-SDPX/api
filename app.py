@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 app.config['MYSQL_HOST'] = 'sql'
 app.config['MYSQL_USER'] = 'admin'
-app.config['MYSQL_PASSWORD'] = 'db4dev$'
-app.config['MYSQL_DB'] = 'db_dev'
+app.config['MYSQL_PASSWORD'] = 'db4test$'
+app.config['MYSQL_DB'] = 'db_test'
 
 mysql = MySQL(app)
 
@@ -92,4 +92,4 @@ def delete_user(uid):
         return jsonify({'error': str(e)})
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8001)
+    app.run(host='0.0.0.0', port=8002)
